@@ -13,28 +13,8 @@ Tab:AddButton({
 end
 })    
 
-local OrionLib = loadstring(game:HttpGet('https://pastebin.com/raw/xLRUSiKx'))()
-local Window = OrionLib:MakeWindow({Name = "悬浮窗显示的字", HidePremium = false, SaveConfig = true,IntroText = "78", ConfigFolder = "乱输"})
 local Tab = Window:MakeTab({
-    Name = "功能分类名",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
-Tab:AddButton({
-	Name = "功能名",
-	Callback = function()
-脚本
-end
-})    
-Tab:AddButton({
-	Name = "功能名",
-	Callback = function()
-脚本
-end
-})......
-local Tab = Window:MakeTab({
-    Name = "功能分类名",
+    Name = "功能2",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -44,12 +24,6 @@ Tab:AddButton({
 脚本
 end
 })    
-Tab:AddButton({
-	Name = "T脚本",
-	Callback = function()
-脚本
-end
-})......
 
 
 local LBLG = Instance.new("ScreenGui", getParent)
@@ -91,7 +65,7 @@ local function HeartbeatUpdate()
 	FpsLabel.Text = ("北京时间:"..os.date("%H").."时"..os.date("%M").."分"..os.date("%S"))
 end
 Start = tick()
-卡密系统一些是在整个脚本(包括北京时间)最前面，一些是在最后面
+
 local ScreenGui = Instance.new("ScreenGui")
 local UI = Instance.new("Frame")
 local Title = Instance.new("TextLabel")
@@ -163,8 +137,8 @@ Start.TextWrapped = true
 Start.MouseButton1Click:Connect(function()
     if Key.Text == "我鸡巴好大" then
         ScreenGui:Destroy()
-        这里是你的脚本
+        
     else
-        game.Players.LocalPlayer:Kick("这里是卡密错误踢出时显示的字")
+        game.Players.LocalPlayer:Kick("你被吓死了")
     end
 end)
